@@ -140,7 +140,7 @@
                 pname = "mirrorfour-api";
                 version = "0.1.0";
 
-                src = ./.;
+                src = pkgs.nix-gitignore.gitignoreSource [ ] ./.;
 
                 cargoLock.lockFile = ./Cargo.lock;
 
