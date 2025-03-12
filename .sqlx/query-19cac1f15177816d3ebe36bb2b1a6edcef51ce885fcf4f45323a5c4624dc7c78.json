@@ -1,0 +1,49 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO timeframes (user_id, day, START, duration)\n    VALUES ($1, $2, $3, $4)\nRETURNING\n    *;\n\n",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 1,
+        "name": "user_id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 2,
+        "name": "day",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 3,
+        "name": "start",
+        "type_info": "Time"
+      },
+      {
+        "ordinal": 4,
+        "name": "duration",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Int4",
+        "Int4",
+        "Time",
+        "Int4"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "19cac1f15177816d3ebe36bb2b1a6edcef51ce885fcf4f45323a5c4624dc7c78"
+}
