@@ -1,6 +1,6 @@
 # Mirror Four Api
 
-Installation
+## Installation
 
 ```nix
 # flake.nix
@@ -33,3 +33,17 @@ Installation
   ...
 }
 ```
+
+## Developing
+
+You need:
+
+- [direnv](https://direnv.net)
+- [devenv](https://devenv.sh)
+
+```sh
+cd mirrourfour-api
+devenv up
+```
+
+And you're ready to go :D
